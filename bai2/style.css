@@ -1,0 +1,103 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🌌 Thiết lập font chung */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #5f2c82, #49a09d); /* Gradient nền */
+    color: #ffffff;
+}
+
+/* 🎯 Header */
+.navbar {
+    background: rgba(92, 107, 192, 0.8); /* Màu tím xanh */
+  
+}
+
+/* 🔗 Menu điều hướng */
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffeb3b; /* Màu vàng khi hover */
+}
+
+/* 📦 Danh sách sản phẩm */
+.card {
+    background-color: rgba(255, 255, 255, 0.15); /* Màu trắng trong suốt */
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin: 10px; /* Khoảng cách giữa các thẻ card */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* 💰 Nút mua hàng */
+.btn-primary {
+    background-color: #ff9800; /* Màu cam */
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #e65100; /* Màu cam đậm */
+    transform: scale(1.1);
+}
+
+/* 📦 Sidebar */
+.card.sidebar-card {
+    background-color: rgba(25, 156, 255, 0.8); /* Màu xanh dương trong suốt */
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+.col-md-3 {
+    padding: 10px;
+    margin-top: 40px;   
+   
+}
+
+/* 🔗 Mạng xã hội */
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #ffeb3b;
+}
+
+/* 🦶 Footer */
+.footer {
+    background: rgba(0, 0, 0, 0.7); /* Màu đen trong suốt */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.carousel-item {
+    font-weight : 1200px;    
+    height: 400px;
+    
+   
+}

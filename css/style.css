@@ -1,0 +1,202 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🌌 Thiết lập font chung */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #5f2c82, #49a09d); /* Gradient nền */
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 🎯 Header */
+header {
+    background: rgba(92, 107, 192, 0.8); /* Màu tím xanh */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    grid-column: 1 / span 2;
+}
+
+/* 🔗 Menu điều hướng */
+nav {
+    background-color: rgba(255, 152, 0, 0.9); /* Màu cam đậm */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    grid-column: 1 / span 2;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Màu vàng khi hover */
+}
+
+/* 📦 Danh sách sản phẩm */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    grid-column: 1;
+}
+
+/* 📦 Card sản phẩm */
+.product-card {
+    background-color: rgba(255, 255, 255, 0.15); /* Màu trắng trong suốt */
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* 🏷️ Tiêu đề sản phẩm */
+.product-card h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 📝 Nội dung mô tả */
+.product-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* 💰 Nút mua hàng */
+.button {
+    background-color: #ff9800; /* Màu cam */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #e65100; /* Màu cam đậm */
+    transform: scale(1.1);
+}
+
+/* 📦 Sidebar */
+.sidebar {
+    background-color: rgba(25, 156, 255, 0.8); /* Màu xanh dương trong suốt */
+    color: white;
+    padding: 20px;
+    grid-column: 2;
+    text-align: left;
+}
+
+/* 🔗 Mạng xã hội */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #ffeb3b;
+}
+
+/* 🦶 Footer */
+.footer {
+    background: rgba(0, 0, 0, 0.7); /* Màu đen trong suốt */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    grid-column: 1 / span 2;
+    display: grid;
+}
+
+.footer-item {
+    padding: 10px;
+}
+
+/* 📱 Responsive cho thiết bị nhỏ */
+@media (max-width: 576px) {
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sidebar {
+        grid-column: 1 / span 2;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Chỉnh layout cho máy tính */
+@media (min-width: 768px) {
+    .footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* 🎨 Các kiểu nút */
+.button1 {
+    border-radius: 2px;
+}
+
+.button3 {
+    border-radius: 8px;
+}
+
+.button4 {
+    border-radius: 12px;
+}
+
+.button5 {
+    border-radius: 50%;
+}

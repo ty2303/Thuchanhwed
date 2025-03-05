@@ -1,0 +1,42 @@
+/* 🌌 Màu nền tổng thể */
+body {
+    background: linear-gradient(to right, #5f2c82, #49a09d);
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+/* 🎯 Header */
+header {
+    background: #5c6bc0;
+}
+
+/* 🔗 Menu điều hướng */
+nav {
+    background-color: #ff9800 !important;
+}
+
+/* 📦 Card sản phẩm */
+.card {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border-radius: 15px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+/* 💰 Nút mua hàng */
+.btn-primary {
+    background-color: #5c6bc0 !important;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #1a237e !important;
+}
+
+/* 🦶 Footer */
+footer {
+    background-color: #333 !important;
+}
